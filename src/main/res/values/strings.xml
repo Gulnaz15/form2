@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Form</string>
+    <string name="btn_add">Добавить</string>
+    <string name="btn_see">Посмотреть</string>
+</resources>

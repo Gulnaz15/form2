@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UserForm">
+
+    <TextView
+        android:id="@+id/data"
+        android:text="Данные"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0."
+        android:paddingVertical="12dp"/>
+
+    <TableRow
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.422"
+        android:layout_marginLeft="30dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Имя"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/name"
+            android:hint="ваше имя"
+            android:layout_width="50dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:textSize="18sp" />
+
+        <RelativeLayout/>
+
+    </TableRow>
+
+    <TableRow
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Фамилия"
+                android:layout_weight="1"
+                android:textSize="18sp"/>
+            <EditText
+                android:id="@+id/surname"
+                android:hint="ваша фамилия"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:textSize="18sp"/>
+
+            <RelativeLayout/>
+        </TableRow>
+
+        <TableRow
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Телефон"
+                android:layout_weight="1"
+                android:textSize="18sp"/>
+
+            <EditText
+                android:id="@+id/phone"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:hint="ваш номер телефона"
+                android:textSize="18sp" />
+
+            <ImageButton
+                android:layout_height="match_parent"
+                android:src="@drawable/phone"
+                tools:ignore="SpeakableTextPresentCheck"/>
+        </TableRow>
+
+        <TableRow
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Сайт"
+                android:layout_weight="1"
+                android:textSize="18sp"/>
+            <EditText
+                android:id="@+id/site"
+                android:hint="ваш сайт"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:textSize="18sp"/>
+
+            <ImageButton
+                android:layout_height="match_parent"
+                android:src="@drawable/link"
+                tools:ignore="SpeakableTextPresentCheck" />
+        </TableRow>
+
+        <TableRow
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Адрес"
+                android:layout_weight="1"
+                android:textSize="18sp"/>
+            <EditText
+                android:id="@+id/address"
+                android:hint="ваш адрес"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:textSize="18sp"/>
+            <ImageButton
+                android:layout_height="match_parent"
+                android:src="@drawable/address"
+                tools:ignore="SpeakableTextPresentCheck"/>
+        </TableRow>
+
+        <Button
+            android:id="@+id/btn_submit"
+            android:text="Сохранить"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"/>
+</TableLayout>
